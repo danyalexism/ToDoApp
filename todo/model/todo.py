@@ -17,8 +17,9 @@ class Todo:
     def __str__(self):
 
 class TodoBook:
-    def __init__(self, todos: dict(1,Todo)):
+    def __init__(self, todos: dict[1,Todo]):
         self.todos = {}
+
 
 
 
