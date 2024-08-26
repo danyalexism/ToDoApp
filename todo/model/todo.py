@@ -13,5 +13,13 @@ class Todo:
          if tag not in self.tags:
             self.tags.append(tag)
 
+    # terminar
+    def __str__(self):
+
+class TodoBook:
+    def __init__(self, todos: dict(1,Todo)):
+        self.todos = {}
+
+
 
 
