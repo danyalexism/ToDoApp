@@ -5,6 +5,7 @@ class Todo:
         self.description: str = description
         self.completed: bool = False
         self.tags: list[str] = []
+
     def mark_completed(self):
         self.completed = True
 
@@ -13,7 +14,10 @@ class Todo:
             self.tags.append(tag)
 
     # terminar
-    # def __str__(self):
+    # def __str__(self) -> str:
+           return f"code id: {self.code_id}, title: {self.title}"
+
+
 
 class TodoBook:
     def __init__(self, todos: dict[1, Todo]):
