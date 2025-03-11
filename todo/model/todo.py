@@ -16,7 +16,12 @@ class Todo:
     def __str__(self) -> str:
         return f"code id: {self.code_id}, title: {self.title}"
 
+class TodoBook:
 
+    def __init__(self):
+            self.todos = {}
+
+    def add_todo(self, title: str, description: str) -> int:
 
     # def add_todo(self):
 
